@@ -87,6 +87,7 @@ There is no limit to the number of video streams you can concat together in one 
 - simplify filter graph required to achieve multi-file concat in concat.sh
 - **support default values for gl-transition uniforms**
   - this is the reason a lot of gl-transitions currently appear to not function properly
+  - in order to fix the **gl-transitions that appear to not work properly**, edit the source code of the **.glsl** transition                      file and assign a value to the variables in the beginning (uncomment the already written values) and change the variable from **uniform float** to simple **float**, alternatively replace the variable with the values desired in the code.
 - remove restriction that both inputs be the same size
 - support general gl-transition uniforms
 - add gl-transition logic for aspect ratios and resize mode
